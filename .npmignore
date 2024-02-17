@@ -1,0 +1,9 @@
+src/api
+src/assets
+src/components
+src/config
+src/platform
+src/router
+src/main.js
+vue.config.js
+.git/

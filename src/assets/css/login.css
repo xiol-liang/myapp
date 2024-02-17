@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',Sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("../images/bg1.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/bg2.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+body.signup::after {
+    opacity: 1;
+}
+body.signup #login-container{
+    height: 540px;
+}
+body.signup #login-container span::before,
+body.signup #login-container span::after {
+    background: url("../../assets/images/bg2.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}

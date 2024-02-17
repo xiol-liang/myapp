@@ -1,0 +1,93 @@
+.popup-widget {
+  background: rgba(11, 52, 64, 0.9);
+  overflow: hidden;
+  //background: url("../images/theme-blue/layout/chouti.png");
+  //background-repeat: no-repeat;
+  //background-size: 100% 100%;
+  //background-position: center;
+}
+.minimized {
+  display: none;
+}
+/* 定义旋转动画 */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg); /* 两圈是360度*2 */
+  }
+}
+
+/* 定义光线延伸动画 */
+@keyframes extendLine {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 150px;
+  }
+}
+
+/* 定义发蓝光的渐变效果 */
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px #45f3ff, 0 0 20px #45f3ff, 0 0 30px #45f3ff;
+  }
+  100% {
+    box-shadow: 0 0 20px #45f3ff, 0 0 30px #45f3ff, 0 0 40px #45f3ff;
+  }
+}
+.popu-title-bar {
+  width: 100%;
+  height: 60px;
+  padding: 5px 5px 15px 5px;
+  span {
+    display: inline-block;
+    color: #45f3ff;
+    font-size: 24px;
+  }
+  .title-btns {
+    float: right;
+  }
+  .el-button {
+    transition: 0.5s;
+    background: #45f3ff;
+    border: #1e4f52;
+    float: right;
+  }
+  .el-button+.el-button, .el-checkbox.is-bordered+.el-checkbox.is-bordered {
+    margin-left: 0;
+  }
+  .el-button:hover {
+    color: #ffffff;
+    border-color: #1e4f52;
+    background-color: #1e4f52;
+  }
+  .el-button:focus {
+    color: #606266;
+    border-color: #1e4f52;
+    background-color: #45f3ff;
+  }
+  .title-bgimg {
+    position: absolute;
+    animation: rotate 1s ease-in forwards;
+    background-image: url("../images/theme-blue/title/titleCircle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+  }
+  /* 创建光线的伪元素 */
+  .title-bgimg::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 25px;
+    width: 0px;
+    height: 2px; /* 光线的高度 */
+    background: linear-gradient(0deg, #45f3ff, #45f3ff); /* 渐变颜色，这里使用了蓝色 */
+    animation: extendLine 0.5s ease-in forwards, glowing 1s ease-in forwards; /* 光线的发光效果  linear线性 ease（缓慢进入，快速结束*/
+    animation-delay: 1s; /* 延迟光线的出现，保持与旋转动画时长一致 */
+  }
+}

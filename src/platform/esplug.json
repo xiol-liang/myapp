@@ -1,0 +1,224 @@
+{
+  "loginInfo": [
+    {
+      "username": "manager",
+      "password": "manager",
+      "xw": "管理员"
+    },
+    {
+      "username": "test",
+      "password": "test",
+      "xw": "用户一"
+    }
+  ],
+  "menuBar": {
+    "leftLabel": [
+      {
+        "xw": "管理员",
+        "children": [
+          {
+            "name": "个人信息",
+            "icon": "userInfo",
+            "component": "userInfo"
+          },
+          {
+            "name": "配置",
+            "icon": "setting",
+            "component": "platformSetting"
+          },
+          {
+            "name": "通讯录",
+            "icon": "addressBook",
+            "component": "addressBook"
+          },
+          {
+            "name": "业务工具1",
+            "icon": "toolBox1",
+            "component": "toolBoxOne"
+          },
+          {
+            "name": "业务工具2",
+            "icon": "toolBox2",
+            "component": "toolBoxTwo"
+          },
+          {
+            "name": "业务工具3",
+            "icon": "toolBox3",
+            "component": "toolBoxThree"
+          }
+        ]
+      },
+      {
+        "xw": "用户一",
+        "children": [
+          {
+            "name": "个人信息",
+            "icon": "userInfo",
+            "component": "userInfo"
+          },
+          {
+            "name": "通讯录",
+            "icon": "addressBook",
+            "component": "addressBook"
+          },
+          {
+            "name": "业务工具1",
+            "icon": "toolBox1",
+            "component": "toolBoxOne"
+          },
+          {
+            "name": "业务工具2",
+            "icon": "toolBox2",
+            "component": "toolBoxTwo"
+          },
+          {
+            "name": "业务工具3",
+            "icon": "toolBox3",
+            "component": "toolBoxThree"
+          }
+        ]
+      }
+    ],
+    "rightLabel": [],
+    "bottomLabel": [
+      {
+        "xw": "管理员",
+        "children": [
+          {
+            "name": "任务管理",
+            "component": "taskManage"
+          },
+          {
+            "name": "用户管理",
+            "component": "userManage"
+          },
+          {
+            "name": "系统管理",
+            "component": "systemManage"
+          }
+        ]
+      },
+      {
+        "xw": "用户一",
+        "children": [
+          {
+            "name": "任务清单",
+            "component": "taskMenu"
+          },
+          {
+            "name": "备忘录",
+            "component": "memorandum"
+          }
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "配置",
+      "component": "platformSetting",
+      "type": "PopupWidget",
+      "left": 380,
+      "top": 100,
+      "width": 1000,
+      "height": 750
+    },
+    {
+      "name": "通讯录",
+      "component": "addressBook",
+      "type": "PopupWidget",
+      "left": 50,
+      "top": 100,
+      "width": 400,
+      "height": 700
+    },
+    {
+      "name": "业务工具1",
+      "component": "toolBoxOne",
+      "type": "PopupTool",
+      "left": 380,
+      "top": 100,
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "name": "业务工具2",
+      "component": "toolBoxTwo",
+      "type": "PopupTool",
+      "left": 380,
+      "top": 100,
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "name": "业务工具3",
+      "component": "toolBoxThree",
+      "type": "PopupTool",
+      "left": 380,
+      "top": 100,
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "name": "底部工具1",
+      "component": "BottomToolOne",
+      "type": "BottomTool",
+      "left": 380,
+      "top": 100,
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "name": "底部工具2",
+      "component": "BottomToolTwo",
+      "type": "BottomTool",
+      "left": 380,
+      "top": 100,
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "name": "底部工具3",
+      "component": "BottomToolThree",
+      "type": "BottomTool",
+      "left": 380,
+      "top": 100,
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "name": "个人信息",
+      "component": "userInfo",
+      "type": "PopupWidget",
+      "left": 120,
+      "top": 100,
+      "width": 600,
+      "height": 400
+    },
+    {
+      "name": "任务管理",
+      "component": "TaskManage",
+      "type": "BottomWidget"
+    },
+    {
+      "name": "任务清单",
+      "component": "TaskMenu",
+      "type": "BottomWidget"
+    },
+    {
+      "name": "用户管理",
+      "component": "UserManage",
+      "type": "BottomWidget"
+    },
+    {
+      "name": "系统管理",
+      "component": "SystemManage",
+      "type": "BottomWidget"
+    },
+    {
+      "name": "消息管理",
+      "component": "MessageManager",
+      "type": "BottomWidget"
+    }
+  ]
+}
