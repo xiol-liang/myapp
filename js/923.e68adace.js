@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmyapp"]=self["webpackChunkmyapp"]||[]).push([[923],{923:function(e,t,n){n.r(t),n.d(t,{default:function(){return f}});var a=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"title"},[e._v("系统管理")])},s=[],u={name:"SystemManage"},l=u,c=n(3736),r=(0,c.Z)(l,a,s,!1,null,"37bce6ff",null),f=r.exports}}]);
+//# sourceMappingURL=923.e68adace.js.map

@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmyapp"]=self["webpackChunkmyapp"]||[]).push([[508],{3508:function(t,e,o){o.r(e),o.d(e,{default:function(){return r}});var l=function(){var t=this,e=t.$createElement,o=t._self._c||e;return o("div",{staticClass:"tool-title"},[t._v(" 业务工具一 "),o("el-button",{on:{click:t.closeTest}},[t._v("关闭业务工具二")])],1)},n=[],s={name:"toolBoxOne",data(){return{}},methods:{closeTest(){this.$xiol.closeComponent(["toolBoxTwo"])}}},a=s,c=o(3736),u=(0,c.Z)(a,l,n,!1,null,"92a1d8e8",null),r=u.exports}}]);
+//# sourceMappingURL=508.f0ba19c6.js.map
