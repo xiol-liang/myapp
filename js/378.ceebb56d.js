@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmyapp"]=self["webpackChunkmyapp"]||[]).push([[378],{9378:function(e,t,a){a.r(t),a.d(t,{default:function(){return i}});var n=function(){var e=this,t=e.$createElement,a=e._self._c||t;return a("div",{staticClass:"title"},[e._v("消息管理")])},s=[],u={name:"MessageManager"},l=u,r=a(3736),c=(0,r.Z)(l,n,s,!1,null,"4cad4984",null),i=c.exports}}]);
+//# sourceMappingURL=378.ceebb56d.js.map
