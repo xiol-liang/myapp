@@ -20,7 +20,7 @@ git commit -m '部署'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:xiol-liang/myapp.git main:gh-pages
+git push -f git@github.com:xiol-liang/myapp.git master:gh-pages
 
 cd -
 # 小更新可以先不发布，在 git 上执行 yarn dev 启动本地服务器查看
